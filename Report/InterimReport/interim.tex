@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+
+% First load extension packages
+\usepackage[a4paper,margin=25mm]{geometry}    % page layout
+\usepackage{setspace} \onehalfspacing         % line spacing
+\usepackage{amsfonts,amssymb,amsmath}         % useful math extensions
+\usepackage{graphicx}                         % graphics import
+\usepackage{siunitx}                          % easy SI units
+
+% Change paragraph indentation
+\setlength{\parskip}{10pt}
+\setlength{\parindent}{0pt}
+
+% User-defined commands
+\newcommand{\diff}[2]{\frac{\mathrm{d}{#1}}{\mathrm{d}{#2}}}
+\newcommand{\ddiff}[2]{\frac{\mathrm{d}^2{#1}}{\mathrm{d}{#2}^2}}
+\newcommand{\pdiff}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\pddiff}[2]{\frac{\partial^2{#1}}{\partial{#2}^2}}
+\newcommand{\pdiffdiff}[3]{\frac{\partial^2{#1}}{\partial{#2}\partial{#3}}}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\newcommand{\Idx}{\;\mathrm{d}x}
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rational}{\mathbb{Q}}
+\newcommand{\Integer}{\mathbb{Z}}
+\newcommand{\Natural}{\mathbb{N}}
+
+% topmatter
+\title{Project title}
+
+\author{Name \\ Supervised by Dr A.\ Supervisor}
+
+\date{\today}
+
+% main body
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\section{Literature review}
+
+\section{Project plan}
+
+\section{Progress}
+
+%Create the style, and include the bibliography.
+\bibliographystyle{plain}
+\bibliography{interim}
+
+% the end
+\end{document}
