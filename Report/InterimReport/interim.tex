@@ -6,6 +6,8 @@
 \usepackage{amsfonts,amssymb,amsmath}         % useful math extensions
 \usepackage{graphicx}                         % graphics import
 \usepackage{siunitx}                          % easy SI units
+\usepackage{color, colortbl}
+\usepackage{longtable}
 
 % Change paragraph indentation
 \setlength{\parskip}{10pt}
@@ -24,11 +26,12 @@
 \newcommand{\Rational}{\mathbb{Q}}
 \newcommand{\Integer}{\mathbb{Z}}
 \newcommand{\Natural}{\mathbb{N}}
+\definecolor{Gray}{gray}{0.9}
 
 % topmatter
 \title{Deep Learning methods in Genomic Medicine}
 
-\author{Matthew Ramcharan \\ Supervised by Dr C.\ Campbell}
+\author{Matthew Ramcharan \\ Supervised by Dr Colin\ Campbell}
 
 \date{\today}
 
@@ -37,16 +40,66 @@
 \maketitle
 
 \section{Introduction}
+Cancer
 
 \section{Literature review}
+CScape was cool, lets make it better.
+Gunnar Rasch has a great idea for genomes.
 
 \section{Project plan}
+
+\begin{longtable}{ |p{5cm}|p{3cm}|p{6cm}|  }
+	\hline
+	Action & Timeframe & Project Relevance \\
+	\hline\hline
+	Research the problem & Weeks 2-4 & The dataset style used in  the CScape \cite{Rogers2017} and the method proposed in the Framework for Multi-task Multiple Kernel Learning \cite{Widmer2015} are integral to this project, and so should be understood well. \\
+	\hline
+ 	Learn how to apply the Shogun toolkit for toy problems  & Weeks 4-5 & Learning how to use an existing implementation of the Multi-task Multiple Kernel Learning will provide greater insight into expected outputs when used on more complex datasets. \\
+ 	\hline
+ 	Gain an understanding of the COSMIC \cite{Forbes2017} data & Weeks 5-6 & Selecting data to be used from the vast database COSMIC will be what is used throughout all of this project. \\
+ 	\hline
+ 	 & Weeks 6-7 &  \\
+ 	\hline
+ 	 & Weeks 7-11 &  \\
+ 	\hline
+	\rowcolor{Gray}
+ 	Write Interim Report & Weeks 8-9 & \\
+ 	\hline
+ 	 & Weeks 9-11 &  \\
+ 	\hline
+	  & Weeks 11-12 & . \\
+ 	\hline
+ 	Create Poster & Weeks 12-13 &  Christmas break is a long period, for both revision, and Project\\
+ 	\hline
+	\rowcolor{Gray}
+ 	Ready for, and present in, Poster Presentation & Week 14 & \\
+ 	\hline
+	 & Weeks 14-16 &  \\
+
+	\hline
+	Finish Technical work, draw conclusions and consolidate report & Weeks 16-19 & Allow plenty of time to finish and polish the report. \\
+	\hline
+	\rowcolor{Gray}
+	Draft of one chapter/section of final report hand-in. &  Week 17 & Section is written during consolidation period \\
+	\hline
+	Proofread & Week 19-20 &\\
+	\hline
+	\rowcolor{Gray}
+	Submit full draft of final report and poster & Week 20 &\\
+	\hline
+	Update report and poster with any relevant details from Supervisor Dr Colin Campbell & Week 21 &\\
+	\hline
+	Proofread & Week 22 &\\
+	\rowcolor{Gray}
+	Final hand-in date for report and poster & Week 22.3 (First week of easter) & Noted for completeness, hand-in should be late Week 21/ early Week 22\\
+	\hline
+\end{longtable}
 
 \section{Progress}
 
 %Create the style, and include the bibliography.
 \bibliographystyle{plain}
-\bibliography{interim}
+\bibliography{/home/matt/Documents/TechnicalProject/DeepLearningGenomicMed/Report/Literature/GenomicMedicine}
 
 % the end
 \end{document}
