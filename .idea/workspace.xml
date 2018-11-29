@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/Report/InterimReport/interim.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/InterimReport/interim.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/InterimReport/interim.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Report/InterimReport/interim.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/InterimReport/interim.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Report/InterimReport/interim.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Literature/GenomicMedicine.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Literature/GenomicMedicine.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +29,8 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,8 +57,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2332" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="Markdown" value="2375" />
+          <entry key="PLAIN_TEXT" value="98" />
           <entry key="Python" value="669" />
         </counts>
       </usages-collector>
@@ -110,8 +109,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1218">
-                <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+              <first_editor relative-caret-position="783">
+                <caret line="105" column="142" selection-start-line="105" selection-start-column="142" selection-end-line="105" selection-end-column="142" />
               </first_editor>
               <second_editor />
             </state>
@@ -166,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,7 +182,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,14 +315,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543280314893</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes to Interim. Adding to Plan">
+      <created>1543506504489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543506504490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="134" y="35" width="3706" height="2125" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28385848" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28717524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,7 +343,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23263328" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23263328" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32956383" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -357,7 +363,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pycharm stuff" />
     <MESSAGE value="Testing if Shogun works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing if Shogun works" />
+    <MESSAGE value="Changes to Interim. Adding to Plan" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to Interim. Adding to Plan" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -407,8 +414,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1218">
-            <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+          <first_editor relative-caret-position="783">
+            <caret line="105" column="142" selection-start-line="105" selection-start-column="142" selection-end-line="105" selection-end-column="142" />
           </first_editor>
           <second_editor />
         </state>

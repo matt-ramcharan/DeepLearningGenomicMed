@@ -100,6 +100,16 @@ Task = type of cancer
 
 different recurrence levels of cancers
 
+
+Formalize the somatic mutation prediction problem as a classification problem
+
+predicts the oncogenic status (disease-driver or neutral) of somatic point mutations in the coding and non-coding regions of the cancer genome
+
+COSMIC:
+[The cancer specific version of FATHMM-MKL is under development and when available these scores will be updated.](https://cancer.sanger.ac.uk/cosmic/analyses)
+Heh, dats me
+
+
 ## Original Task
 
 Project title: Deep learning methods in genomic medicine
