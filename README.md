@@ -54,7 +54,7 @@ Multitask on cscape (novel)
 
 
 
-What tring to do
+What trying to do
 steps to get upto
 differences in methods
 weeks worth of work per task
