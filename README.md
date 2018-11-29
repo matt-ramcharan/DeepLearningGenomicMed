@@ -6,6 +6,76 @@ Multitask on toy problems
 
 Cosmic data manipulate
 
+Write a lot about data.
+
+Build Support vector machine as base for data
+
+Finding similarites between cancers
+Type code is a clinical catogorisation.
+
+FATHMM-XF should be used for cancer data.
+
+CScape using same base information. Different information is cancer type, which is a task.
+
+Choosing which are functional disease
+
+Same variant 5 or more times was a driver.
+If absent its neutral
+
+numbers of postiives at recurrence levels agree with Cscape
+
+Cscape was 76% ish up to 90% raise by 3% with multitask
+
+non cancer very conserved is good
+
+cancer highly successful cell. able to proliferate in a poor situation. Hypoxic. Survivor. 
+conserved vs not conserved different from standard cell.
+
+
+HAVE UNTIL 5pm WEDNESDAY - INTERIM REPORT.
+
+## Plan
+
+current progress understanding of models
+
+Need a strong plan.
+
+A lot of data manipulation
+
+Check for recurrence in CScape data
+
+Build Support vector machine as base for data (1 task, 1 kernel)
+
+1 task, multikernel learning (Following FATHMM-MKL (effectively CScape - MKL, if somewhat novel))
+
+Focus on getting multitask working on toy data 
+
+Multitask on cscape (novel)
+
+
+
+What tring to do
+steps to get upto
+differences in methods
+weeks worth of work per task
+
+build
+analyse
+build
+analyse
+build
+analyse
+Big Anaylse
+
+
+
+Contact Mark Rogers 
+
+Make own version of multitask.
+
+
+
+
 ## Notes
 Communicate with Mark Rogers in Collerado
 [mark.f.rogers.phd@gmail.com](mark.f.rogers.phd@gmail.com)
