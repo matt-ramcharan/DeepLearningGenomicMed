@@ -46,17 +46,44 @@ These types of cell division lead to malignant tumors, in which the excessive ce
 
 This means being capable of discriminating between benign and oncogenic mutations is integral to identifying cancer before the tumor gets too large, or in grows to be in a bad position to excise. 
 
+Genome sequences are stored as Singular nucleotide polymorpisms, which are the difference in a single DNA building block, called a nucleotide. When SNPs occur within a gene or in a regulatory region near a gene, they may play a more direct role in disease by affecting the gene’s function.
+
 In this project we focus on the prediction for somatic point mutation in the coding region of the human cancer genome. There are many cancer sequence databases currently being compiled, such as the Cancer Genome Atlas, COSMIC, 
+
+We will call the new method when used on general data tentatively FATHMM-MTMLK
+CScape-MTMLK
+
+
+the portion of the genome which codes for proteins accounts for only about 2\% of the whole sequence, and it is becoming increasingly evident that non–coding portions of the genome play crucial functional roles in human development and disease\cite{Esteller2011}
+
 
 
 \section{Literature review}
-CScape was cool, lets make it better.
-Gunnar Rasch has a great idea for genomes.
 
-The problem of identifying which variations in genomic information drive disease is a well recorded and explored one \cite{Rogers2017,Quang2015,Shihab2013}. The specific case of if the disease driven is cancer
-Rogers et al \cite{Rogers2017}
+
+The problem of identifying which variations in genomic information drive disease is a well recorded and explored one
+
+
+
+\subsection{General Purpose Predictors}
 
 general-purpose pathogenic mutation classifiers across coding and noncoding regions.
+\cite{Quang2015,Kircher2014}
+
+\subsection{Cancer Specific Predictors}
+
+CScape was cool, lets make it better.
+
+ \cite{Rogers2017,Quang2015,Shihab2013}. 
+
+The specific case of if the disease driven is cancer
+Rogers et al \cite{Rogers2017}
+
+
+\subsection{Multi-task Multiple Kernel Learning}
+
+Gunnar Rasch has a great idea for genomes.
+\cite{Widmer2015}
 
 \section{Project plan}
 
@@ -64,7 +91,7 @@ This project is primarily following this plan:
 
 The datasets used
 \begin{enumerate}
-	\item CScape data \cite{Rogers2017} - Contains labelled genome data for 
+	\item CScape data \cite{Rogers2017} - Contains labelled genome data for somatic and germline SNVs which are distingushed 
 	\item COSMIC Data - 
 \end{enumerate}
 
@@ -72,8 +99,14 @@ The datasets used
 The algorithms that will be used to predict these datasets are
 \begin{enumerate}
 	\item Support Vector Machine - The simplest kernel method for integrating different data sources is to combine the features from all sources into a single kernel \cite{Rogers2017}. Creates a binary classifier of either Pathogenic (Positive) or Control (Negative)
-	\item Multiple Kernel Learning - A composite kernel is made from a set of base kernels, in which each base kernel is derived from an individual set of data, which are different features like Histone Modifications, 100-Way Sequence Conservation, or Genome Segmentation.
-	\item Multi-task Multiple Kernel Learning - Applying the multiple kernel with multi-tasks where each task is a type of cancer (lung, breast, brain, etc)
+	\item Multiple Kernel Learning - A composite kernel is made from a set of base kernels, in which each base kernel is derived from an individual set of data, which are different features like Histone Modifications, 100-Way Sequence Conservation, or Genome Segmentation. \cite{Shihab2015}
+	\item Multi-task Multiple Kernel Learning - Applying the multiple kernel with multi-tasks where each task is a type of cancer (lung, breast, brain, etc) \cite{Widmer2015}
+\end{enumerate}
+
+
+Results that need to be produced
+\begin{enumerate}
+	\item ROC curve of 
 \end{enumerate}
 
 
@@ -90,7 +123,7 @@ The algorithms that will be used to predict these datasets are
 	\hline	
  	Gain an understanding of the COSMIC \cite{Forbes2017} data & Weeks 5-6 & Selecting data to be used from the vast database COSMIC will be what is used for the main stage of this project - the implementation of Multi-task, multiple kernel learning. \\
  	\hline
- 	 Understand existing models (CScape, FATHMM-MKL, & Weeks 6-9 &  \\
+ 	Understand existing models (CScape, FATHMM, FATHMM-MKL) & Weeks 6-9 &  \\
  	\hline
 	\rowcolor{Gray}
  	Write Interim Report & Weeks 9-10 & \\
@@ -131,6 +164,8 @@ The algorithms that will be used to predict these datasets are
 \end{longtable}
 
 \section{Progress}
+
+\section{Conclusions and Further Work}
 
 %Create the style, and include the bibliography.
 \bibliographystyle{plain}
