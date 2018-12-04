@@ -29,7 +29,7 @@
 \definecolor{Gray}{gray}{0.9}
 
 % topmatter
-\title{Deep Learning methods in Genomic Medicine}
+\title{Deep Learning methods in Genomic Medicine\\ Interim Report}
 
 \author{Matthew Ramcharan \\ Supervised by Dr Colin\ Campbell}
 
@@ -41,11 +41,12 @@
 
 \section{Introduction}
 
-Somatic mutations are any alteration in cell that will not be passed onto future generations \cite{Griffiths2000}. A somatic mutation in a cell of a fully developed organism can have little to no noticeable effect on the organism itself (often leading to benign growths), however mutations that give rise to cancer are a special case. Cancer mutations arise in a special category of genes called proto-oncogenes, many of which regulate cell division. When mutated, such cells enter a state of uncontrolled division and become Oncogenes, resulting in a cluster of cells called a tumor.  There is also mutations in tumor-suppressor genes which can cause tumors by preventing regulation of cell proliferation.
-
+Somatic mutations are any alteration in cell that will not be passed onto future generations \cite{Griffiths2000}. A somatic mutation in a cell of a fully developed organism can have little to no noticeable effect on the organism itself (often leading to benign growths), however mutations that give rise to cancer are a special case. Cancer arises either from inactivation of tumor suppressor genes, or mutation of a special category of genes called proto-oncogenes, many of which regulate cell division. When mutated, proto-oncogenes enter a state of uncontrolled division and become Oncogenes, resulting in a cluster of cells called a tumor.  
 These types of cell division lead to malignant tumors, in which the excessive cell proliferation causes the tumor to spread into surrounding tissues and cause damage. 
 
-This means being capable of discriminating between benign and oncogenic mutations is integral to identifying cancer before the tumor gets too large, or in grows to be in a bad position to excise. In this project we implement each 
+This means being capable of discriminating between benign and oncogenic mutations is integral to identifying cancer before the tumor gets too large, or in grows to be in a bad position to excise. 
+
+In this project we focus on the prediction for somatic point mutation in the coding region of the human cancer genome. There are many cancer sequence databases currently being compiled, such as the Cancer Genome Atlas, COSMIC, 
 
 
 \section{Literature review}
@@ -55,6 +56,7 @@ Gunnar Rasch has a great idea for genomes.
 The problem of identifying which variations in genomic information drive disease is a well recorded and explored one \cite{Rogers2017,Quang2015,Shihab2013}. The specific case of if the disease driven is cancer
 Rogers et al \cite{Rogers2017}
 
+general-purpose pathogenic mutation classifiers across coding and noncoding regions.
 
 \section{Project plan}
 
@@ -71,7 +73,7 @@ The algorithms that will be used to predict these datasets are
 \begin{enumerate}
 	\item Support Vector Machine - The simplest kernel method for integrating different data sources is to combine the features from all sources into a single kernel \cite{Rogers2017}. Creates a binary classifier of either Pathogenic (Positive) or Control (Negative)
 	\item Multiple Kernel Learning - A composite kernel is made from a set of base kernels, in which each base kernel is derived from an individual set of data, which are different features like Histone Modifications, 100-Way Sequence Conservation, or Genome Segmentation.
-	\item Multi-task Multiple Kernel Learning - Applying the multiple kernel 
+	\item Multi-task Multiple Kernel Learning - Applying the multiple kernel with multi-tasks where each task is a type of cancer (lung, breast, brain, etc)
 \end{enumerate}
 
 
