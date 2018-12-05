@@ -8,6 +8,7 @@
 \usepackage{siunitx}                          % easy SI units
 \usepackage{color, colortbl}
 \usepackage{longtable}
+\usepackage[url=false, maxbibnames=7]{biblatex}
 
 % Change paragraph indentation
 \setlength{\parskip}{10pt}
@@ -27,6 +28,11 @@
 \newcommand{\Integer}{\mathbb{Z}}
 \newcommand{\Natural}{\mathbb{N}}
 \definecolor{Gray}{gray}{0.9}
+\setlength\arrayrulewidth{0.7pt}
+\newcolumntype{R}{>{\raggedright\arraybackslash}}
+
+\IfFileExists{/home/matt/Documents/TechnicalProject/DeepLearningGenomicMed/Report/Literature/GenomicMedicine}{\bibliography{/home/matt/Documents/TechnicalProject/DeepLearningGenomicMed/Report/Literature/GenomicMedicine}}{\bibliography{C:/Users/matt-/Documents/Uni/TechnicalProject/DeepLearningGenomicMed/Report/Literature/GenomicMedicine}}
+
 
 % topmatter
 \title{Deep Learning methods in Genomic Medicine\\ Interim Report}
@@ -41,38 +47,28 @@
 
 \section{Introduction}
 
-Somatic mutations are any alteration in cell that will not be passed onto future generations \cite{Griffiths2000}. A somatic mutation in a cell of a fully developed organism can have little to no noticeable effect on the organism itself (often leading to benign growths), however mutations that give rise to cancer are a special case. Cancer arises either from inactivation of tumor suppressor genes, or mutation of a special category of genes called proto-oncogenes, many of which regulate cell division. When mutated, proto-oncogenes enter a state of uncontrolled division and become Oncogenes, resulting in a cluster of cells called a tumor.  
-These types of cell division lead to malignant tumors, in which the excessive cell proliferation causes the tumor to spread into surrounding tissues and cause damage. 
+Somatic mutations are any alteration in cell that will not be passed onto future generations \cite{Griffiths2000}. A somatic mutation in a cell of a fully developed organism can have little to no noticeable effect on the organism itself (often leading to benign growths), however mutations that give rise to cancer are a special case. Cancer arises either from inactivation of tumour suppressor genes, or mutation of a special category of genes called proto-oncogenes, many of which regulate cell division. When mutated, proto-oncogenes enter a state of uncontrolled division and become oncogenes, resulting in a cluster of cells called a tumour.  
+These types of cell division lead to malignant tumours, in which the excessive cell proliferation causes the tumour to spread into surrounding tissues and cause damage. 
 
-This means being capable of discriminating between benign and oncogenic mutations is integral to identifying cancer before the tumor gets too large, or in grows to be in a bad position to excise. 
+A common, probably simplistic, model view defines two classes of mutations, `driver' mutations, i.e. mutations that give a cancer cell a particular selective advantage, and functionally irrelevant `passenger' mutations.
+Discovering functionally important mutations, including clear ‘drivers’ is one goal of genome re-sequencing efforts \cite{Reva2011}. To understand the functional contribution of molecular alterations to oncogenesis, response to therapy and evolution of resistance to therapy it is important to have tools that predict the functional implications of mutations as early in the discovery process as possible.
 
-Genome sequences are stored as Singular nucleotide polymorpisms, which are the difference in a single DNA building block, called a nucleotide. When SNPs occur within a gene or in a regulatory region near a gene, they may play a more direct role in disease by affecting the gene’s function.
+As a dataset, genome sequences are stored as Singular nucleotide polymorphisms, which are the difference in a single DNA building block, called a nucleotide. When SNPs occur within a gene (the coding region) or in a regulatory region near a gene (certain parts of the non-coding regions), they may play a more direct role in disease by affecting the gene’s function.
 
-In this project we focus on the prediction for somatic point mutation in the coding region of the human cancer genome. There are many cancer sequence databases currently being compiled, such as the Cancer Genome Atlas, COSMIC, 
+The coding region, the portion of the genome which codes for proteins, accounts for only about 2\% of the whole sequence, and it is becoming increasingly evident that non–coding portions of the genome play crucial functional roles in human development and disease\cite{Esteller2011}. This implies there is merit to attempting the same methods on data from both the coding and non-coding regions of the human genome.
 
-We will call the new method when used on general data tentatively FATHMM-MTMLK
-CScape-MTMLK
-
-
-the portion of the genome which codes for proteins accounts for only about 2\% of the whole sequence, and it is becoming increasingly evident that non–coding portions of the genome play crucial functional roles in human development and disease\cite{Esteller2011}
-
-
+In this project we focus on prediction of the effects of somatic point mutations leading to amino acid substitutions\cite{Shihab2013} in the coding and noncoding region of the human cancer genome. These predictions will be assigned a label as to if a point mutation is oncogenic (Likely cancerous) or benign. There are many cancer sequence databases currently being compiled, such as the Cancer Genome Atlas, COSMIC, and the National Cancer Institute and an large aspect of this project is selecting appropriate data to correctly train a cancer predictor, then test it holds up to a variety of data sources.
 
 \section{Literature review}
 
-
-The problem of identifying which variations in genomic information drive disease is a well recorded and explored one
-
-
+The problem of identifying which variations in genomic information drive disease is a well recorded and explored one. This project will focus on developing a cancer specific predictor, however the sequencing techniques in identifying any deleterious mutations are similar for most diseases. Cancer specific predictors are still advancing every day, to the point they are starting to become useful in clinical applications\cite{DiResta2018}.
 
 \subsection{General Purpose Predictors}
 
-general-purpose pathogenic mutation classifiers across coding and noncoding regions.
-\cite{Quang2015,Kircher2014}
+General-purpose pathogenic mutation classifiers across coding and non-coding regions have been implemented using multiple different machine learning architectures, including deep learning\cite{Quang2015}, support vector machines \cite{Kircher2014} and Multiple Kernel Learning \cite{Shihab2015}. Since there are so many pathogenic variants recorded, and their effects are better known, these models can be considered somewhat easier than cancer specific predictors to train and test.
+
 
 \subsection{Cancer Specific Predictors}
-
-CScape was cool, lets make it better.
 
  \cite{Rogers2017,Quang2015,Shihab2013}. 
 
@@ -82,94 +78,81 @@ Rogers et al \cite{Rogers2017}
 
 \subsection{Multi-task Multiple Kernel Learning}
 
-Gunnar Rasch has a great idea for genomes.
-\cite{Widmer2015}
+Widmer et al \cite{Widmer2015} proposed an advancement on Multi-task learning which utilises the results from Multiple Kernel learning to inform the similarities between tasks.
 
 \section{Project plan}
 
 This project is primarily following this plan:
 
-The datasets used
+\subsection{Datasets}
+
+The datasets that will be used will be
 \begin{enumerate}
-	\item CScape data \cite{Rogers2017} - Contains labelled genome data for somatic and germline SNVs which are distingushed 
-	\item COSMIC Data - 
+	\item CScape data \cite{Rogers2017} - Contains labelled genome data for somatic and germline SNVs which can be distinguished into different types of cancer. Uses data from COSMIC and the 1,000 Genomes Project \cite{Gibbs2015}
+	\item COSMIC Data - Shown to be a good source for cancer somatic point mutations.  Supplementary Table SM2 of Reva et al\cite{Reva2011} shows 957 genes with significance for cancer, of which there are many unique mutations for each
+	\item ClinVar\cite{Landrum2014} - As a set of unseen test examples.
 \end{enumerate}
 
 
-The algorithms that will be used to predict these datasets are
+\subsection{Models}
+The models that will be used to predict labels for these datasets are:
+
 \begin{enumerate}
-	\item Support Vector Machine - The simplest kernel method for integrating different data sources is to combine the features from all sources into a single kernel \cite{Rogers2017}. Creates a binary classifier of either Pathogenic (Positive) or Control (Negative)
-	\item Multiple Kernel Learning - A composite kernel is made from a set of base kernels, in which each base kernel is derived from an individual set of data, which are different features like Histone Modifications, 100-Way Sequence Conservation, or Genome Segmentation. \cite{Shihab2015}
-	\item Multi-task Multiple Kernel Learning - Applying the multiple kernel with multi-tasks where each task is a type of cancer (lung, breast, brain, etc) \cite{Widmer2015}
+	\item Support Vector Machine - The simplest kernel method for integrating different data sources is to combine the features from all sources into a single kernel \cite{Rogers2017}. Creates a binary classifier of either Pathogenic (Positive) or Control (Negative).
+	\item Multiple Kernel Learning - A composite kernel is made from a set of base kernels, in which each base kernel is derived from an individual set of data, which are different features like Histone Modifications, 100-Way Sequence Conservation, or Genome Segmentation \cite{Shihab2015}.
+	\item Multi-task Multiple Kernel Learning\cite{Widmer2015} - Applying the multiple kernel learning method with multi-tasks where each task is a type of cancer (lung, breast, brain, etc.)
 \end{enumerate}
 
 
-Results that need to be produced
+\subsection{Results}
+Results and measures that the models will output are:
 \begin{enumerate}
-	\item ROC curve of 
+	\item Test (and training) accuracies of each method on a given training and test set using Leave One Chromosome Out Cross Validation (LOCO-CV) \cite{Rogers2017,Yang2014,Lippert2011,Listgarten2012} in which for each fold we leave out one test chromosome while the remaining 21 chromosomes are used to train the model, using the same model parameters for all folds (similar to 22-fold cross-validation). to achieve a high balanced accuracy\cite{Brodersen2010} to derive an accurate estimate of label prediction performance.
+	\item ROC curves for every method tried on a dataset along with their AUCs.
 \end{enumerate}
 
 
-
-\begin{longtable}{ |p{5cm}|p{3cm}|p{6cm}|  }
+\subsection{Action Plan}
+\begin{longtable}{|Rp{\dimexpr0.3\textwidth-2\tabcolsep\relax}|p{\dimexpr0.15\textwidth-2\tabcolsep\relax}|p{\dimexpr0.55\textwidth-2\tabcolsep\relax}|}
 	\hline
-	Action & Timeframe & Project Relevance \\
-	\hline\hline
-	Research the problem & Weeks 2-4 & The dataset style used in  the CScape \cite{Rogers2017} and the method proposed in the Framework for Multi-task Multiple Kernel Learning \cite{Widmer2015} are integral to this project, and so should be understood well. \\
-	\hline
- 	Learn how to apply the Shogun toolkit for toy problems  & Weeks 4-5 & Learning how to use an existing implementation of the Multi-task Multiple Kernel Learning will provide greater insight into expected outputs when used on more complex datasets. \\
- 	\hline
-	Download and understand CScape dataset & Week 5 & Simplest form of dataset to be used in this project\\
-	\hline	
- 	Gain an understanding of the COSMIC \cite{Forbes2017} data & Weeks 5-6 & Selecting data to be used from the vast database COSMIC will be what is used for the main stage of this project - the implementation of Multi-task, multiple kernel learning. \\
- 	\hline
- 	Understand existing models (CScape, FATHMM, FATHMM-MKL) & Weeks 6-9 &  \\
- 	\hline
+	Action & Time frame & Project Relevance \\ \hline\hline
+	Research the problem & Weeks 2-4 & The dataset style used in  the CScape \cite{Rogers2017} and the method proposed in the Framework for Multi-task Multiple Kernel Learning \cite{Widmer2015} are integral to this project, and so should be understood well. \\ \hline
+ 	Learn how to apply the Shogun toolkit for toy problems  & Weeks 4-5 & Learning how to use an existing implementation of the Multi-task Multiple Kernel Learning will provide greater insight into expected outputs when used on more complex datasets. \\\hline
+	Download and understand CScape dataset & Week 5 & This is, in a way, the simplest form of dataset to be used in this project. \\ \hline
+ 	Gain an understanding of the COSMIC \cite{Forbes2017} data & Weeks 5-6 & Selecting data to be used from the vast database COSMIC will be what is used for the main stage of this project - the implementation of Multi-task, multiple kernel learning. \\ \hline
+ 	Understand existing models (CScape, FATHMM, FATHMM-MKL) & Weeks 6-9 &  Having a high level understanding of the existing models will help to know how the problem has been approached, and if there are any unusual processes when implementing a kernel based method with genomic data.\\ \hline
 	\rowcolor{Gray}
- 	Write Interim Report & Weeks 9-10 & \\
- 	\hline
-	  & Weeks 10-12 & . \\
- 	\hline
- 	 & Weeks 12 &  \\
-	\hline
-	& Christmas! & \\
- 	\hline
-	& Week 13 & \\
-	\hline
+ 	Write Interim Report & Weeks 9-10 &   \\ \hline
+	Implement Simple Support Vector Machine on CScape data & Week 10 & Working up from the simplest baseline in the hierarchy of models will allow greater insight into how the models function, and show how the methods vary in accuracy. \\ \hline
+	Implement Multiple Kernel Learning on CScape data & Week 11 & Similar to previous week.  \\ \hline
+	Collect CScape equivalent datasets from COSMIC and 1000 Genome project including cancer type & Week 12 & The key difference between the existing CScape dataset and the one necessary for MTMKL is that each genome sequence should have the type of cancer the sample came from labelled. \\ \hline
+	Implement Multi-task Multiple Kernel Learning on CScape data & Weeks 12-13 & Longer term implementation. This forms the basis of a novel approach to problem. This will allow us to generate results to compare this novel method to the previous ones. \\ \hline
+	& Christmas Break & \\ \hline
+	Generate results for different models. Primarily ROC curves and accuracy measurements & Week 13 & These results should be the primary discussion point for the MTMKL model, distinguishing it from existing models.\\ \hline
 	\rowcolor{Gray}
- 	Ready for, and present Presentation & Week 14 & \\
- 	\hline
-	 & Weeks 14-16 &  \\
-	\hline
-	Finish Technical work, draw conclusions and consolidate report & Weeks 16-19 & Allow plenty of time to finish and polish the report. \\
-	\hline
+ 	Ready for, and present Presentation & Week 14 & \\ \hline
+	Collect data from unseen data sources (as discussed above) and preprocess to be appropriate to all implemented models & Week 15-16 & Testing the models on previously unseen data sources will reveal if there is any bias in the CScape dataset.\\ \hline
+	Finish Technical work, draw conclusions and consolidate report & Weeks 16-19 & Allow plenty of time to finish and polish the report. \\ \hline
 	\rowcolor{Gray}
-	Draft of one chapter/section of final report hand-in. &  Week 17 & Section is written during consolidation period \\
-	\hline
-	Update/change report style based on feedback of single section and continue writing & Week 17-19 & Report changes are still during consolidation period\\
-	\hline
-	Create Poster & Week 19 & \\
-	\hline
-	Proofread Report & Week 19-20 &\\
-	\hline
+	Draft of one chapter/section of final report hand-in. &  Week 17 & Section is written during consolidation period \\ \hline
+	Update/change report style based on feedback of single section and continue writing & Week 17-19 & Report changes are still during the Week 16-19 consolidation period. \\ \hline
+	Create Poster & Week 19 & \\ \hline
+	Proofread Report & Week 19-20 & \\ \hline
 	\rowcolor{Gray}
-	Submit full draft of final report and poster & Week 20 &\\
-	\hline
-	Update report and poster with any relevant details from Supervisor Dr Colin Campbell & Week 21 &\\
-	\hline
-	Proofread & Week 22 &\\
+	Submit full draft of final report and poster & Week 20 & \\ \hline
+	Update report and poster with any relevant details from Supervisor Dr Colin Campbell & Week 21 & \\ \hline
+	Proofread & Week 22 & \\
 	\rowcolor{Gray}
-	Final hand-in date for report and poster & Week 22.3 (First week of easter) & Noted for completeness, hand-in should be late Week 21/ early Week 22\\
-	\hline
+	Final hand-in date for report and poster & Week 22.3 (First week of Easter) & Noted for completeness, hand-in should be late Week 21/ early Week 22 \\ \hline
 \end{longtable}
-
-\section{Progress}
 
 \section{Conclusions and Further Work}
 
-%Create the style, and include the bibliography.
-\bibliographystyle{plain}
-\bibliography{/home/matt/Documents/TechnicalProject/DeepLearningGenomicMed/Report/Literature/GenomicMedicine}
+Most modern advancement in the relevant general purpose nonsynonymous nucleotide variant predictor field is Alirezaie et al\cite{Alirezaie2018} but is currently previous planned work will need to be completed before the decision to invest time and money into this paper can be made.
 
+%Create the style, and include the bibliography.
+%\bibliographystyle{plain}
+
+\printbibliography
 % the end
 \end{document}
