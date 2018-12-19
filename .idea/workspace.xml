@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7896ac4b-0a6f-4f5b-ad9c-42d7aa822b1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DeepLearningGenomicMed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DeepLearningGenomicMed.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +51,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="640">
               <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -267,7 +263,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543275765535</updated>
-      <workItem from="1544472920679" duration="3211000" />
+      <workItem from="1544472920679" duration="3268000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm stuff">
       <created>1543275939013</created>
@@ -297,22 +293,28 @@
       <option name="project" value="LOCAL" />
       <updated>1543506504490</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Testing SVMs out. Basic SVM implemented - needs Colin data">
+      <created>1544476199261</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544476199261</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3211000" />
+    <option name="totallyTimeSpent" value="3268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28934819" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28934819" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289166" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,7 +323,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23226812" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23226812" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289166" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -339,7 +341,8 @@
     <MESSAGE value="Pycharm stuff" />
     <MESSAGE value="Testing if Shogun works" />
     <MESSAGE value="Changes to Interim. Adding to Plan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to Interim. Adding to Plan" />
+    <MESSAGE value="Testing SVMs out. Basic SVM implemented - needs Colin data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing SVMs out. Basic SVM implemented - needs Colin data" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -408,7 +411,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="640">
           <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
