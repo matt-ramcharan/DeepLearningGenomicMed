@@ -1,5 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
+import pandas as pd
 
 def svm_func(x,y):
     ## Where x is training data and y is labels
@@ -25,18 +26,30 @@ def svm_func(x,y):
     return w, out
 
 
-#Input data
-x = np.array([
-    [-2,4,-1],
-    [4,1,-1],
-    [1, 6, -1],
-    [2, 4, -1],
-    [6, 2, -1],
+train_data = pd.read_csv('sonar.tr',sep='\s+', header = None, names=list(range(1,62)))
+train_input = train_data.loc[:,:train_data.shape[1]-1]
+train_labels = train_data.loc[:,train_data.shape[1]]
 
-])
+test_data = pd.read_csv('sonar.ts',sep='\s+', header = None, names=list(range(1,62)))
+test_input = test_data.loc[:,:test_data.shape[1]-1]
+test_labels = test_data.loc[:,test_data.shape[1]]
+
+
+
+
+
+#Input data
+# x = np.array([
+#     [-2,4,-1],
+#     [4,1,-1],
+#     [1, 6, -1],
+#     [2, 4, -1],
+#     [6, 2, -1],
+#
+# ])
 
 #output label
-y = np.array([-1, -1, 1, 1, 1])
+# y = np.array([-1, -1, 1, 1, 1])
 
 for val, inp in enumerate(x):
     if y[val] == -1:
