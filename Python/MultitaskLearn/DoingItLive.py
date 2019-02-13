@@ -1,61 +1,82 @@
-import shogun
+#import shogun
 import numpy as np
+import binarytree
+import scipy
+from binarytree import build
+import pandas as pd
+from scipy.spatial.distance import euclidean, pdist, squareform
+import matplotlib.pyplot as plt
 
 
-# Python3 program to construct binary
-# tree from given array in level
-# order fashion Tree Node
-
-# Helper function that allocates a
-# new node
-class newNode:
-    def __init__(self, data):
-        self.data = data
-        self.left = self.right = None
+def similarity_func(u, v):
+    return 1/(1+euclidean(u,v))
 
 
-# Function to insert nodes in level order
-def insertLevelOrder(arr, root, i, n):
-    # Base case for recursion
-    if i < n:
-        temp = newNode(arr[i])
-        root = temp
+def change_repres_rand(top,node,m):
+    #print(top.represN)
+    top[node].pprint()
+    top[node].represN = [1,1,1]
+    subtree = top[node].levelorder
+    for i in subtree:
+        repres_index = np.random.choice(range(len(i.represN)), m, replace=False)
+        for j in repres_index:
+            cur_rep = getattr(i,'represN')
+            new_rep = cur_rep
+            new_rep[j] = cur_rep[j]*-1
+            setattr(i,'represN',new_rep)
 
-        # insert left child
-        root.left = insertLevelOrder(arr, root.left,
-                                     2 * i + 1, n)
+            #setattr(i,'value',100)
 
-        # insert right child
-        root.right = insertLevelOrder(arr, root.right,
-                                      2 * i + 2, n)
+            print(getattr(i,'represN'))
+        print('\n')
+    return top
+
+def rand_change_recurse(root,m):
+    order = root.preorder
+    for node in order:
+        root = change_repres_rand(node,m)
     return root
 
 
-# Function to print tree nodes in
-# InOrder fashion
-def inOrder(root):
-    if root != None:
-        inOrder(root.left)
-        print(root.data, end=" ")
-        inOrder(root.right)
+if __name__ == "__main__":
 
-    # Driver Code
+    # Build a tree from list representation
 
-
-if __name__ == '__main__':
-    #arr = [1, 2, 3, 4, 5, 6, 6, 6, 6]
-    arr = range(1,32)
-    n = len(arr)
-    root = None
-    root = insertLevelOrder(arr, root, 0, n)
-    inOrder(root)
-
-# This code is contributed by PranchalK
+    tree_size = 7
+    #tree_size = 64-1
+    repres_size = 5
+    #repres_size = 100
 
 
+    values = range(0,tree_size)
+    repres_orig = [[1]*repres_size] * tree_size
+    #repres_orig = np.random.randint(2,size=(tree_size,repres_size)).tolist()
+    root = build(values,repres=repres_orig)
 
-mu_d = np.ones([100,1])
-#print(mu_d)
+    m = 3
 
-#dist1 = np.
-#dist2 =
+    root.pprint()
+
+    #print([j.repres for j in root[3].levelorder])
+
+    #print(root[3].preorder)
+
+
+    root = change_repres_rand(root,1,m)
+
+    #rand_change_recurse(root,m)
+    print(repres_orig)
+    #print([j.repres for j in root.levelorder])
+    root.pprint()
+    represes = [rep.represN for rep in root.leaves]
+    #np.array(represes).T.tolist()
+    labels = root.leaves
+
+    DF_var = pd.DataFrame(represes)
+    DF_var.index = labels
+
+    dists = pdist(DF_var, similarity_func)
+    DF_euclid = pd.DataFrame(squareform(dists))
+    print(DF_euclid)
+    plt.matshow(DF_euclid.corr())
+    #plt.show()
