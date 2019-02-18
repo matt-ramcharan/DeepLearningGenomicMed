@@ -11,11 +11,11 @@ import matplotlib.pyplot as plt
 def similarity_func(u, v):
     return 1/(1+euclidean(u,v))
 
-
+"""
 def change_repres_rand(top,node,m):
     #print(top.represN)
     top[node].pprint()
-    top[node].represN = [1,1,1]
+    #top[node].represN = [1,1,1]
     subtree = top[node].levelorder
     for i in subtree:
         repres_index = np.random.choice(range(len(i.represN)), m, replace=False)
@@ -30,7 +30,7 @@ def change_repres_rand(top,node,m):
             print(getattr(i,'represN'))
         print('\n')
     return top
-
+"""
 def rand_change_recurse(root,m):
     order = root.preorder
     for node in order:
@@ -50,23 +50,32 @@ if __name__ == "__main__":
 
     values = range(0,tree_size)
     repres_orig = [[1]*repres_size] * tree_size
-    #repres_orig = np.random.randint(2,size=(tree_size,repres_size)).tolist()
-    root = build(values,repres=repres_orig)
+    root = build(values,repres=repres_orig.copy())
+    print(repres_orig)
 
     m = 3
 
     root.pprint()
 
-    #print([j.repres for j in root[3].levelorder])
+    node = 1
+    root[node].pprint()
+    #top[node].represN = [1,1,1]
+    subtree = root[node].values
 
-    #print(root[3].preorder)
+    for subnode in subtree:
+
+        repres_index = np.random.choice(range(len(root[subnode].represN)), m, replace=False)
+        cur_rep = getattr(root[subnode], 'represN')
+        new_rep = cur_rep
+        for j in repres_index:
+            new_rep[j] = cur_rep[j]*-1
+
+        setattr(root[subnode], 'represN', new_rep)
+        print(getattr(root[subnode],'represN'))
+        print('\n')
 
 
-    root = change_repres_rand(root,1,m)
-
-    #rand_change_recurse(root,m)
     print(repres_orig)
-    #print([j.repres for j in root.levelorder])
     root.pprint()
     represes = [rep.represN for rep in root.leaves]
     #np.array(represes).T.tolist()
@@ -79,4 +88,4 @@ if __name__ == "__main__":
     DF_euclid = pd.DataFrame(squareform(dists))
     print(DF_euclid)
     plt.matshow(DF_euclid.corr())
-    #plt.show()
+    plt.show()

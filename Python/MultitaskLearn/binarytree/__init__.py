@@ -1698,7 +1698,7 @@ def build(values,repres = None):
     if repres == None:
         nodes = [None if v is None else Node(v) for v in values]
     else:
-        nodes = [None if v is None else Node(v,represN=repres[v]) for v in values]
+        nodes = [None if v is None else Node(v,represN=repres[v].copy()) for v in values]
 
     for index in range(1, len(nodes)):
         node = nodes[index]
