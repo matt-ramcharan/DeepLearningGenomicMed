@@ -69,3 +69,5 @@ if __name__ == "__main__":
     #print(DF_euclid)
     plt.matshow(DF_euclid.corr())
     plt.show()
+
+    dist1 = np.random.normal()
