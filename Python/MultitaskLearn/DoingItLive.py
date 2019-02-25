@@ -49,8 +49,8 @@ if __name__ == "__main__":
     root = build(values,repres=repres_orig.copy())
     #print(repres_orig)
 
-    #m = 5
-    m=1
+    m = 5
+    #m=1
 
     root.pprint()
     #root = change_repres_rand(root, 1, m)
@@ -70,4 +70,14 @@ if __name__ == "__main__":
     plt.matshow(DF_euclid.corr())
     plt.show()
 
-    dist1 = np.random.normal()
+    randoms = np.random.normal(represes, 20)
+    #print(randoms)
+
+    rands_DF_var = pd.DataFrame(randoms)
+    rands_DF_var.index = labels
+
+    rands_dists = pdist(rands_DF_var, similarity_func)
+    rands_DF_euclid = pd.DataFrame(squareform(rands_dists))
+    # print(DF_euclid)
+    plt.matshow(rands_DF_euclid.corr())
+    plt.show()
