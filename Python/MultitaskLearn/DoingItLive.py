@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 
 def similarity_func(u, v):
-    return 1/(1+euclidean(u,v))
+    return np.dot(u, v)
 
 
 def change_repres_rand(top,node,m):
@@ -38,19 +38,21 @@ if __name__ == "__main__":
 
     # Build a tree from list representation
 
-    #tree_size = 7
-    tree_size = 64-1
-    #repres_size = 5
-    repres_size = 100
+    ##Parameters
+    # tree_size = 7
+    # repres_size = 5
+    # m=1
 
+    tree_size = 64-1
+    m = 5
+    repres_size = 100
 
     values = range(0,tree_size)
     repres_orig = [[1]*repres_size] * tree_size
     root = build(values,repres=repres_orig.copy())
     #print(repres_orig)
 
-    m = 5
-    #m=1
+
 
     root.pprint()
     #root = change_repres_rand(root, 1, m)
@@ -68,16 +70,31 @@ if __name__ == "__main__":
     DF_euclid = pd.DataFrame(squareform(dists))
     #print(DF_euclid)
     plt.matshow(DF_euclid.corr())
+    plt.xlabel('Leaves')
+    plt.ylabel('Leaves')
+    plt.title(r'$\mu_d$ dot products')
     plt.show()
 
-    randoms = np.random.normal(represes, 20)
+    #randoms = np.random.normal(represes, 20)
     #print(randoms)
+    #
+    # rands_DF_var = pd.DataFrame(randoms)
+    # rands_DF_var.index = labels
+    #
+    # rands_dists = pdist(rands_DF_var, similarity_func)
+    # rands_DF_euclid = pd.DataFrame(squareform(rands_dists))
+    # # print(DF_euclid)
+    # plt.matshow(rands_DF_euclid.corr())
+    # plt.xlabel('Leaves')
+    # plt.ylabel('Leaves')
+    # plt.title('Sampled from distribution dot products')
+    # plt.show()
 
-    rands_DF_var = pd.DataFrame(randoms)
-    rands_DF_var.index = labels
+    mu_pos = DF_var.multiply(0.5)
+    pos_dataset = np.random.normal(mu_pos, 20)
+    np.savetxt("pos_dataset.csv",pos_dataset,delimiter=',')
 
-    rands_dists = pdist(rands_DF_var, similarity_func)
-    rands_DF_euclid = pd.DataFrame(squareform(rands_dists))
-    # print(DF_euclid)
-    plt.matshow(rands_DF_euclid.corr())
-    plt.show()
+
+    mu_neg = DF_var.multiply(-0.5)
+    neg_dataset = np.random.normal(mu_neg, 20)
+    np.savetxt("neg_dataset.csv",neg_dataset,delimiter=',')
