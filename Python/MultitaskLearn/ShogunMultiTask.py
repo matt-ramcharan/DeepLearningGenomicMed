@@ -1,5 +1,6 @@
 import shogun
 import pandas as pd
+import numpy as np
 
 # from subprocess import Popen, PIPE
 #
@@ -21,5 +22,9 @@ import pandas as pd
 #         yield line.strip().split()
 
 
-data = pd.read_csv('~/Documents/TechnicalProject/Data/cscape/cscape_coding_training_examples.tab', sep='\t')
-print(data)
+#data = pd.read_csv('~/Documents/TechnicalProject/Data/cscape/cscape_coding_training_examples.tab', sep='\t')
+#print(data)
+
+neg_dataset = np.loadtxt("neg_dataset.csv",delimiter=',')
+pos_dataset = np.loadtxt("pos_dataset.csv",delimiter=',')
+
