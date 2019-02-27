@@ -6,6 +6,7 @@ from binarytree import build
 import pandas as pd
 from scipy.spatial.distance import euclidean, pdist, squareform
 import matplotlib.pyplot as plt
+import pickle
 
 
 def similarity_func(u, v):
@@ -73,6 +74,7 @@ if __name__ == "__main__":
     plt.xlabel('Leaves')
     plt.ylabel('Leaves')
     plt.title(r'$\mu_d$ dot products')
+    plt.colorbar()
     plt.show()
 
     #randoms = np.random.normal(represes, 20)
@@ -90,11 +92,27 @@ if __name__ == "__main__":
     # plt.title('Sampled from distribution dot products')
     # plt.show()
 
-    mu_pos = DF_var.multiply(0.5)
-    pos_dataset = np.random.normal(mu_pos, 20)
-    np.savetxt("pos_dataset.csv",pos_dataset,delimiter=',')
+    mu_pos = DF_var.multiply(0.5).values
+    train_points = 10
+    test_points = 1000
+
+    pos_train_dataset = np.swapaxes(np.array([np.random.normal(mu_pos, 20) for td in range(train_points)]),0,1)
+    pos_train_dataset = np.dstack((pos_train_dataset, np.ones((32,train_points))))
+
+    pos_test_dataset = np.swapaxes(np.array([np.random.normal(mu_pos, 20) for td in range(test_points)]),0,1)
+    pos_test_dataset = np.dstack((pos_test_dataset, np.ones((32,test_points))))
 
 
     mu_neg = DF_var.multiply(-0.5)
-    neg_dataset = np.random.normal(mu_neg, 20)
-    np.savetxt("neg_dataset.csv",neg_dataset,delimiter=',')
+    neg_train_dataset = np.swapaxes(np.array([np.random.normal(mu_neg, 20) for td in range(train_points)]),0,1)
+    neg_train_dataset = np.dstack((neg_train_dataset, -1*np.ones((32,train_points))))
+
+    neg_test_dataset = np.swapaxes(np.array([np.random.normal(mu_neg, 20) for td in range(test_points)]),0,1)
+    neg_test_dataset = np.dstack((neg_test_dataset, -1*np.ones((32,test_points))))
+
+    train_dataset = np.concatenate((pos_train_dataset,neg_train_dataset), axis=1)
+    test_dataset = np.concatenate((pos_test_dataset, neg_test_dataset), axis=1)
+
+    np.save('train', train_dataset)
+    np.save('test', test_dataset)
+    np.save('corr', represes)
