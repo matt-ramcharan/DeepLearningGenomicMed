@@ -1,4 +1,5 @@
-from shogun.Features import *
+#from shogun.Features import *
+from shogun import Features
 from shogun.Kernel import *
 from shogun.Classifier import *
 from shogun.Evaluation import *
@@ -18,9 +19,9 @@ feats_test = RealFeatures(testdata_real)
 width = 2
 kernel = GaussianKernel(feats_train, feats_train, width)
 km = kernel.get_kernel_matrix()
-help(Labels)
-labels = Labels(train_labels)
-labels_test = Labels(test_labels)
+#help(Labels)
+labels = BinaryLabels(train_labels)
+labels_test = BinaryLabels(test_labels)
 
 C = 1.0
 svm = LibSVM(C, kernel, labels)
@@ -29,7 +30,12 @@ svm.train()
 output = svm.apply(feats_test)
 output_vector = output.get_labels()
 
-pm = PerformanceMeasures(labels_test, output)
-acc = pm.get_accuracy()
-roc = pm.get_auROC()
-fms = pm.get_fmeasure()
+# pm = PerformanceMeasures(labels_test, output)
+# acc = pm.get_accuracy()
+# roc = pm.get_auROC()
+# fms = pm.get_fmeasure()
+#use AccuracyMeasure to get accuracy
+acc=AccuracyMeasure()
+acc.evaluate(output,labels_test)
+accuracy=acc.get_accuracy()*100
+print('Accuracy(%):', accuracy)
