@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6975) (preloaded format=pdflatex 2019.2.8)  4 MAR 2019 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.8)  15 MAR 2019 11:08
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1107,7 +1107,7 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 
+l.19 
       [1]) (Tex/SVM.tex) (Tex/MTL.tex) (Tex/MTMKL.tex) (Tex/Conclusion.tex)
 (Main.bbl
 Underfull \hbox (badness 5217) in paragraph at lines 16--25
@@ -1176,7 +1176,7 @@ e/matt/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/m
 att/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/matt/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/matt/.m
 iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Main.pdf (3 pages, 126582 bytes).
+Output written on Main.pdf (3 pages, 126651 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  18 named destinations out of 1000 (max. 500000)

@@ -1,6 +1,6 @@
-from sklearn import svm
-from sklearn import metrics
+from sklearn import svm, metrics
 from sklearn.utils import shuffle
+from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 from matplotlib import pyplot as plt
 import pandas as pd
@@ -21,17 +21,17 @@ train_data = np.load('/home/matt/Documents/TechnicalProject/DeepLearningGenomicM
 test_data = np.load('/home/matt/Documents/TechnicalProject/DeepLearningGenomicMed/Python/MultitaskLearn/test_alt.npy')
 
 
-# train_input = train_data[1, :, :-1]
-# train_labels = train_data[1, :, -1]
-#
-# test_input = test_data[1, :, :-1]
-# test_labels = test_data[1, :, -1]
-#
-# test_input, test_labels = shuffle(test_input, test_labels, random_state=0)
-# train_input, train_labels = shuffle(train_input, train_labels, random_state=0)
+train_input = train_data[1, :, :-1]
+train_labels = train_data[1, :, -1]
 
-train_input, train_labels = shuffle(test_data[1, :, :-1], test_data[1, :, -1], random_state=0)
-test_input, test_labels = shuffle(train_data[1, :, :-1], train_data[1, :, -1], random_state=0)
+test_input = test_data[1, :, :-1]
+test_labels = test_data[1, :, -1]
+
+test_input, test_labels = shuffle(test_input, test_labels, random_state=0)
+train_input, train_labels = shuffle(train_input, train_labels, random_state=0)
+
+# train_input, train_labels = shuffle(test_data[1, :, :-1], test_data[1, :, -1], random_state=0)
+# test_input, test_labels = shuffle(train_data[1, :, :-1], train_data[1, :, -1], random_state=0)
 
 kernel = 'gaussian'
 
@@ -57,26 +57,35 @@ if kernel=='linear':
     # Model Recall: what percentage of positive tuples are labelled as such?
     print("Recall:", metrics.recall_score(test_labels, y_pred))
 
-elif kernel=='gaussian':
+# elif kernel=='gaussian':
+#     # Create a svm Classifier
+#
+#     #Gaussian
+#     C=0.1
+#     clf = svm.SVC(C = C, kernel="precomputed",verbose=1)
+#
+#     #Train the model using the training sets
+#
+#     model = clf.fit(gaussianKernelGramMatrixFull(train_input, train_input), train_labels)
+#
+#     #Predict the response for test dataset
+#     y_pred = model.predict(gaussianKernelGramMatrixFull(test_input, train_input))
+#
+#     # Model Accuracy: how often is the classifier correct?
+#     print("Accuracy:",metrics.accuracy_score(test_labels, y_pred))
+#
+#
+#     # Model Precision: what percentage of positive tuples are labeled as such?
+#     print("Precision:",metrics.precision_score(test_labels, y_pred))
+#
+#     # Model Recall: what percentage of positive tuples are labelled as such?
+#     print("Recall:",metrics.recall_score(test_labels, y_pred))
+
+elif kernel == 'gaussian':
     # Create a svm Classifier
+    svclassifier = svm.SVC(kernel='rbf')
+    svclassifier.fit(train_input, train_labels)
+    y_pred = svclassifier.predict(test_input)
 
-    #Gaussian
-    C=0.1
-    clf = svm.SVC(C = C, kernel="precomputed",verbose=1)
-
-    #Train the model using the training sets
-
-    model = clf.fit(gaussianKernelGramMatrixFull(train_input, train_input), train_labels)
-
-    #Predict the response for test dataset
-    y_pred = model.predict(gaussianKernelGramMatrixFull(test_input, train_input))
-
-    # Model Accuracy: how often is the classifier correct?
-    print("Accuracy:",metrics.accuracy_score(test_labels, y_pred))
-
-
-    # Model Precision: what percentage of positive tuples are labeled as such?
-    print("Precision:",metrics.precision_score(test_labels, y_pred))
-
-    # Model Recall: what percentage of positive tuples are labelled as such?
-    print("Recall:",metrics.recall_score(test_labels, y_pred))
+    print(confusion_matrix(test_labels, y_pred))
+    print(classification_report(test_labels, y_pred))

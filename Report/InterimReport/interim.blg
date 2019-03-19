@@ -1,33 +1,5 @@
-[0] Config.pm:304> INFO - This is Biber 2.12
-[0] Config.pm:307> INFO - Logfile is 'interim.blg'
-[22] biber-MSWIN64:315> INFO - === 
-[40] Biber.pm:371> INFO - Reading 'interim.bcf'
-[107] Biber.pm:889> INFO - Found 18 citekeys in bib section 0
-[118] Biber.pm:4093> INFO - Processing section 0
-[128] Biber.pm:4254> INFO - Looking for bibtex format file 'C:/Users/matt-/Documents/Uni/TechnicalProject/DeepLearningGenomicMed/Report/Literature/GenomicMedicine.bib' for section 0
-[134] bibtex.pm:1523> INFO - LaTeX decoding ...
-[208] bibtex.pm:1340> INFO - Found BibTeX data source 'C:/Users/matt-/Documents/Uni/TechnicalProject/DeepLearningGenomicMed/Report/Literature/GenomicMedicine.bib'
-[234] Utils.pm:193> WARN - month field 'sep' in entry 'Reva2011' is not an integer - this will probably not sort properly.
-[237] Utils.pm:193> WARN - month field 'dec' in entry 'Esteller2011' is not an integer - this will probably not sort properly.
-[243] Utils.pm:193> WARN - month field 'jun' in entry 'Shihab2013' is not an integer - this will probably not sort properly.
-[246] Utils.pm:193> WARN - month field 'nov' in entry 'DiResta2018' is not an integer - this will probably not sort properly.
-[251] Utils.pm:193> WARN - month field 'mar' in entry 'Quang2015' is not an integer - this will probably not sort properly.
-[258] Utils.pm:193> WARN - month field 'mar' in entry 'Kircher2014' is not an integer - this will probably not sort properly.
-[266] Utils.pm:193> WARN - month field 'may' in entry 'Shihab2015' is not an integer - this will probably not sort properly.
-[271] Utils.pm:193> WARN - month field 'dec' in entry 'Rogers2017' is not an integer - this will probably not sort properly.
-[278] Utils.pm:193> WARN - month field 'jun' in entry 'Widmer2015' is not an integer - this will probably not sort properly.
-[875] Utils.pm:193> WARN - month field 'oct' in entry 'Gibbs2015' is not an integer - this will probably not sort properly.
-[882] Utils.pm:193> WARN - month field 'jan' in entry 'Landrum2014' is not an integer - this will probably not sort properly.
-[888] Utils.pm:193> WARN - month field 'feb' in entry 'Yang2014' is not an integer - this will probably not sort properly.
-[895] Utils.pm:193> WARN - month field 'oct' in entry 'Lippert2011' is not an integer - this will probably not sort properly.
-[902] Utils.pm:193> WARN - month field 'may' in entry 'Listgarten2012' is not an integer - this will probably not sort properly.
-[924] Utils.pm:193> WARN - month field 'jan' in entry 'Forbes2017' is not an integer - this will probably not sort properly.
-[930] Utils.pm:193> WARN - month field 'oct' in entry 'Alirezaie2018' is not an integer - this will probably not sort properly.
-[931] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\matt-\AppData\Local\Temp\bpXuqlKDZe\GenomicMedicine.bib_27852.utf8, line 6, warning: 172 characters of junk seen at toplevel
-[967] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[967] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[967] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[967] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[1006] bbl.pm:636> INFO - Writing 'interim.bbl' with encoding 'UTF-8'
-[1424] bbl.pm:739> INFO - Output to interim.bbl
-[1424] Biber.pm:110> INFO - WARNINGS: 17
+This is BibTeX, Version 0.99dThe top-level auxiliary file: interim.aux
+I found no \citation commands---while reading file interim.aux
+I found no \bibdata command---while reading file interim.aux
+I found no \bibstyle command---while reading file interim.aux
+(There were 3 error messages)
