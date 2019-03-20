@@ -95,7 +95,7 @@ if __name__ == "__main__":
     mu_pos = DF_var.multiply(0.5).values
     train_points = 10
     test_points = 1000
-    var = 0.2
+    var = 0.5
 
     pos_train_dataset = np.swapaxes(np.array([np.random.normal(mu_pos, var) for td in range(train_points)]),0,1)
     pos_train_dataset = np.dstack((pos_train_dataset, np.ones((32,train_points))))

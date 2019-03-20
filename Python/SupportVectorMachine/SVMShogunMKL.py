@@ -6,7 +6,7 @@
 # from shogun.Evaluation import RealFeatures, BinaryLabels, AccuracyMeasure
 # from shogun.Kernel import GaussianKernel
 #from shogun import *
-from shogun.Evaluation import RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure
+from shogun.Evaluation import RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure, ROCEvaluation
 import numpy as np
 from numpy.random import randn
 from shogun.Kernel import GaussianKernel, CombinedKernel, MKLClassification

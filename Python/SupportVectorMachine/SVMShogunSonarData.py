@@ -1,7 +1,8 @@
 import pandas as pd
 from shogun.Loss import L2R_L2LOSS_SVC
-from shogun.Evaluation import RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure
+from shogun.Evaluation import RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure, ROCEvaluation
 from shogun.Kernel import GaussianKernel, LibLinear
+import matplotlib.pyplot as plt
 
 # #Sonar Dataset
 train_data = pd.read_csv('sonar.tr',sep='\s+', header = None, names=list(range(1,62)))
@@ -17,7 +18,7 @@ features_train = RealFeatures(train_feats.T)
 features_test = RealFeatures(test_feats.T)
 labels_train = BinaryLabels(train_label.T)
 labels_test = BinaryLabels(test_label.T)
-epsilon = 0.001
+# epsilon = 0.001
 # C = 1.0
 C = 100000
 
@@ -42,8 +43,18 @@ b = svm.get_bias()
 
 eval = AccuracyMeasure()
 
+roc = ROCEvaluation()
+roc_pred = roc.evaluate(labels_predict, labels_test)
+test = roc.get_ROC()
+plt.plot(test[0],test[1], marker='.')
+plt.show()
+
 eval.evaluate(labels_predict,labels_test)
 accuracy=eval.get_accuracy()*100
+
+
+
 print('Alphas:', alphas)
 print('Bias:', b)
+print('AUROC:', roc_pred)
 print('Accuracy(%):', accuracy)

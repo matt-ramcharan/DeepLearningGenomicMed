@@ -116,3 +116,12 @@ if __name__ == "__main__":
     np.save('train', train_dataset)
     np.save('test', test_dataset)
     np.save('corr', represes)
+
+    frameTrain = pd.DataFrame(train_dataset[1, :, :])
+    frameTest = pd.DataFrame(test_dataset[1, :, :])
+
+    # frameTrain.round(3)
+    # frameTest.round(3)
+
+    frameTrain.round(4).to_csv('hierarch.tr',sep='\t', header=False, index=False)
+    frameTest.round(4).to_csv('hierarch.ts', sep='\t', header=False, index=False)

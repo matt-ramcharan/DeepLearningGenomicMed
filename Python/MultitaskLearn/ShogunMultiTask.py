@@ -1,10 +1,13 @@
-import shogun
+#import shogun
 import pandas as pd
 import numpy as np
+from shogun.Kernel import MultitaskKernelTreeNormalizer, KernelNormalizerToMultitaskKernelTreeNormalizer
+from shogun.Classifier import MKLClassification
 
 train_data = np.load('train.npy')
 test_data = np.load('test.npy')
 correlations = np.load('corr.npy')
+
 
 # features_train = train_data[:,:,:-1]
 # features_test = train_data[:,:,:-1]
@@ -15,6 +18,8 @@ features_train = train_data[1,:,:-1]
 features_test = train_data[1,:,:-1]
 labels_train = train_data[1,:,-1]
 labels_test = test_data[1,:,-1]
+
+##Multi
 
 
 ## Multiple Kernel Learning
