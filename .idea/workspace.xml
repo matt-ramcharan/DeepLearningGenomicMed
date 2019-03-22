@@ -2,34 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7896ac4b-0a6f-4f5b-ad9c-42d7aa822b1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/hierarch.alp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/hierarch.details" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/hierarch.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/hierarch.tr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/hierarch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/svm.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/svm.f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColinSVMHierarchicalData/svm.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunEachTask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunFirstTask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVMSonar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive_Alterable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive_Alterable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/corr.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/corr.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/corr_alt.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/corr_alt.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/test.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/test.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/test_alt.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/test_alt.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/train.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/train.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python/MultitaskLearn/train_alt.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Python/MultitaskLearn/train_alt.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogun.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKL.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunSonarData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunSonarData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/Literature/G8.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Literature/G8.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/Literature/GenomicMedicine.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Literature/GenomicMedicine.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/Literature/MDM Project 2 - AFM.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Literature/MDM Project 2 - AFM.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/MainReport/Main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Main.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/MainReport/Main.log" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/MainReport/Main.out" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Main.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/MainReport/Main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Main.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/MainReport/Main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/MainReport/Main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Main.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/MainReport/Tex/MTL.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Tex/MTL.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/MainReport/Tex/MTMKL.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Tex/MTMKL.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/MainReport/Tex/SVM.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Tex/SVM.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/MainReport/Tex/TitlePage.log" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Tex/TitlePage.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/MainReport/Tex/TitlePage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Report/MainReport/Tex/TitlePage.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,20 +34,24 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMSKlearn.coverage" NAME="SVMSKlearn Coverage Results" MODIFIED="1551712316191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunMKLLibSVM.coverage" NAME="SVMShogunMKLLibSVM Coverage Results" MODIFIED="1553272307598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$scratch_1.coverage" NAME="scratch_1 Coverage Results" MODIFIED="1552651305825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunMKL.coverage" NAME="SVMShogunMKL Coverage Results" MODIFIED="1553013077580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunMKL.coverage" NAME="SVMShogunMKL Coverage Results" MODIFIED="1553263972418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$cscape.coverage" NAME="cscape Coverage Results" MODIFIED="1545231939554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/DataPreprocessing" />
-    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$ShogunMultiTask.coverage" NAME="ShogunMultiTask Coverage Results" MODIFIED="1552650222070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/MultitaskLearn" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMSKlearnMultiTaskData.coverage" NAME="SVMSKlearnMultiTaskData Coverage Results" MODIFIED="1552930262322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$ShogunMultiTask.coverage" NAME="ShogunMultiTask Coverage Results" MODIFIED="1553274384296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/MultitaskLearn" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1544476128701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
-    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogun.coverage" NAME="SVMShogun Coverage Results" MODIFIED="1553108013252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogun.coverage" NAME="SVMShogun Coverage Results" MODIFIED="1553108455654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunExample.coverage" NAME="SVMShogunExample Coverage Results" MODIFIED="1553000442162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$cosmicAccess.coverage" NAME="cosmicAccess Coverage Results" MODIFIED="1543423292838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$DoingItLive.coverage" NAME="DoingItLive Coverage Results" MODIFIED="1553011142193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/MultitaskLearn" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunFirstTask.coverage" NAME="SVMShogunFirstTask Coverage Results" MODIFIED="1553264081654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunTasksConcat.coverage" NAME="SVMShogunTasksConcat Coverage Results" MODIFIED="1553267132550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$shoguntesting.coverage" NAME="shoguntesting Coverage Results" MODIFIED="1543414484504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
-    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$DoingItLive_Alterable.coverage" NAME="DoingItLive_Alterable Coverage Results" MODIFIED="1553082166309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/MultitaskLearn" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunMKLLibSVMSonar.coverage" NAME="SVMShogunMKLLibSVMSonar Coverage Results" MODIFIED="1553266513223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1553082576908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunSonarData.coverage" NAME="SVMShogunSonarData Coverage Results" MODIFIED="1553083649651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$SVMShogunSonarData.coverage" NAME="SVMShogunSonarData Coverage Results" MODIFIED="1553266566825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/SupportVectorMachine" />
+    <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$DoingItLive_Alterable.coverage" NAME="DoingItLive_Alterable Coverage Results" MODIFIED="1553272178292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/MultitaskLearn" />
     <SUITE FILE_PATH="coverage/DeepLearningGenomicMed$cscape_query.coverage" NAME="cscape_query Coverage Results" MODIFIED="1543276206208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
   </component>
   <component name="DatabaseView">
@@ -72,40 +71,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive_Alterable.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2610">
-              <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ColinSVM/sonar.tr">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="379" selection-start-line="16" selection-start-column="379" selection-end-line="16" selection-end-column="379" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKL.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1943">
-              <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunSonarData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="638">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -114,22 +83,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogun.py">
+        <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3712">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="-805">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
               <folding>
-                <element signature="e#271#290#0" expanded="true" />
+                <element signature="e#293#389#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="848">
+              <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -137,8 +106,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunEachTask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="-667">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#271#290#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVMSonar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <folding>
+                <element signature="e#15#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,29 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunFirstTask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/numpy/core/fromnumeric.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-              <folding>
-                <element signature="e#15#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="818">
+              <caret line="76" column="31" lean-forward="true" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -194,14 +166,13 @@
       <find>roc</find>
       <find>\s+</find>
       <find>1.000000000000000000e+00</find>
-      <find>1.000000000000000000e+00</find>
       <find />
       <find>1.0</find>
       <find>MKLClassification</find>
+      <find>Number of attacks</find>
+      <find>epsilon</find>
     </findStrings>
     <replaceStrings>
-      <replace />
-      <replace>1</replace>
       <replace />
       <replace>1</replace>
     </replaceStrings>
@@ -236,15 +207,18 @@
         <option value="$PROJECT_DIR$/ColinSVMHierarchicalData/svm.in" />
         <option value="$PROJECT_DIR$/ColinSVMHierarchicalData/hierarch.tr" />
         <option value="$PROJECT_DIR$/ColinSVMHierarchicalData/hierarch.ts" />
-        <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKL.py" />
         <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunSonarData.py" />
-        <option value="$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive_Alterable.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-        <option value="$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py" />
         <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogun.py" />
         <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunEachTask.py" />
         <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunFirstTask.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
+        <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKL.py" />
+        <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVMSonar.py" />
         <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py" />
+        <option value="$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive_Alterable.py" />
+        <option value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py" />
+        <option value="$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py" />
       </list>
     </option>
   </component>
@@ -314,21 +288,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GenericSQL&#10;Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../multitask" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ColinSVMHierarchicalData" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Python/SupportVectorMachine" />
       <recent name="$PROJECT_DIR$/ColinSVMHierarchicalData" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Python/MultitaskLearn" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ColinSVMHierarchicalData" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SVMShogun">
+  <component name="RunManager" selected="Python.ShogunMultiTask">
     <configuration name="DoingItLive_Alterable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningGenomicMed" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -366,7 +340,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SVMShogun" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SVMShogunMKLLibSVM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningGenomicMed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -379,29 +353,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogun.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="SVMShogunMKL" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DeepLearningGenomicMed" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/SupportVectorMachine" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -432,7 +384,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SVMShogunTasksConcat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningGenomicMed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -440,12 +392,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/SupportVectorMachine" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ShogunMultiTask" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearningGenomicMed" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/MultitaskLearn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -455,19 +429,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.SVMShogun" />
+      <item itemvalue="Python.SVMShogunMKLLibSVM" />
       <item itemvalue="Python.SVMShogunSonarData" />
-      <item itemvalue="Python.SVMShogunMKL" />
+      <item itemvalue="Python.SVMShogunTasksConcat" />
       <item itemvalue="Python.DoingItLive_Alterable" />
-      <item itemvalue="Python.scratch_2" />
+      <item itemvalue="Python.ShogunMultiTask" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SVMShogun" />
-        <item itemvalue="Python.SVMShogunSonarData" />
-        <item itemvalue="Python.scratch_2" />
+        <item itemvalue="Python.ShogunMultiTask" />
+        <item itemvalue="Python.SVMShogunMKLLibSVM" />
         <item itemvalue="Python.DoingItLive_Alterable" />
-        <item itemvalue="Python.SVMShogunMKL" />
+        <item itemvalue="Python.SVMShogunTasksConcat" />
+        <item itemvalue="Python.SVMShogunSonarData" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +476,8 @@
       <workItem from="1552920095659" duration="6423000" />
       <workItem from="1553000296389" duration="10770000" />
       <workItem from="1553076995547" duration="12441000" />
-      <workItem from="1553105167102" duration="2143000" />
+      <workItem from="1553105167102" duration="15702000" />
+      <workItem from="1553263732797" duration="7851000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm stuff">
       <created>1543275939013</created>
@@ -553,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553008431735</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SVM online for hierarchical data, still 50% accuracy. Few bits of writing for svm section of report">
+      <created>1553108230274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553108230274</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105766000" />
+    <option name="totallyTimeSpent" value="127176000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -572,12 +554,13 @@
     <frame x="134" y="35" width="3706" height="2125" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23797679" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24074075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32974717" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32920924" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498618" visible="true" weight="0.32759547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.498618" visible="true" weight="0.32759547" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4994472" weight="0.39752555" />
@@ -587,14 +570,14 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501382" side_tool="true" weight="0.32759547" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.23130715" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49889442" weight="0.43948358" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49889442" weight="0.43894568" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="TypeScript" order="14" weight="0.32974717" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.3297402" />
-      <window_info anchor="right" x="2618" y="380" width="1057" height="1250" id="SciView" order="4" visible="true" weight="0.29215035" />
+      <window_info anchor="right" x="2618" y="380" width="1057" height="1250" id="SciView" order="4" visible="true" weight="0.31370923" />
       <window_info anchor="right" id="Database" order="5" weight="0.3297402" />
       <window_info anchor="right" x="0" y="0" width="876" height="1925" id="Documentation" order="6" side_tool="true" weight="0.3297402" />
     </layout>
@@ -609,7 +592,8 @@
     <MESSAGE value="Testing SVMs out. Basic SVM implemented - needs Colin data" />
     <MESSAGE value="Shogun SVM Gaussian Kernel with tree data working" />
     <MESSAGE value="Shogun SVM working on Sonar Data. To print out bias'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shogun SVM working on Sonar Data. To print out bias'" />
+    <MESSAGE value="SVM online for hierarchical data, still 50% accuracy. Few bits of writing for svm section of report" />
+    <option name="LAST_COMMIT_MESSAGE" value="SVM online for hierarchical data, still 50% accuracy. Few bits of writing for svm section of report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -618,11 +602,6 @@
           <url>file://$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive.py</url>
           <line>113</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMSKlearnMultiTaskData.py</url>
@@ -714,6 +693,36 @@
           <line>84</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVMSonar.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -768,6 +777,16 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>train_feats.min()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>train_feats.max()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>train_data[1, :2, :-1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -802,49 +821,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>train_data[1,:,:-1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>train_data[:,1,:-1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>train_data[:,:,:-1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/svm_func_hinge_loss.py" />
-    <entry file="file://$PROJECT_DIR$/Python/cscape_query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/shoguntesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/cosmicAccess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/binarytree/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -892,16 +871,6 @@
           <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunExample">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1006">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding>
-            <element signature="e#31#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1015,20 +984,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2784">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <element signature="e#15#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="116">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive_Alterable.py">
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/numpy/core/fromnumeric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        <state relative-caret-position="-21">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -1044,66 +1010,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1943">
-          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+        <state relative-caret-position="484">
+          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunSonarData.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_monkey.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#15#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunEachTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunFirstTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        <state relative-caret-position="399">
+          <caret line="492" selection-start-line="492" selection-end-line="492" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3712">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="3060">
+          <caret line="113" column="23" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="23" />
           <folding>
             <element signature="e#271#290#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunSonarData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="116" column="33" lean-forward="true" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+          <folding>
+            <element signature="e#15#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/DoingItLive_Alterable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-849">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#293#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunFirstTask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="76" column="31" lean-forward="true" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunExample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#31#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunTasksConcat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="848">
+          <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunEachTask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-667">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#271#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/SupportVectorMachine/SVMShogunMKLLibSVMSonar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/MultitaskLearn/ShogunMultiTask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="e#15#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

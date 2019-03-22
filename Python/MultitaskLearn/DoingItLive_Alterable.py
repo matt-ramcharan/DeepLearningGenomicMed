@@ -92,7 +92,7 @@ if __name__ == "__main__":
     # plt.title('Sampled from distribution dot products')
     # plt.show()
 
-    mu_pos = DF_var.multiply(0.5).values
+    mu_pos = DF_var.multiply(2).values
     train_points = 10
     test_points = 1000
     var = 0.5
@@ -104,7 +104,7 @@ if __name__ == "__main__":
     pos_test_dataset = np.dstack((pos_test_dataset, np.ones((32,test_points))))
 
 
-    mu_neg = DF_var.multiply(-0.5)
+    mu_neg = DF_var.multiply(-2)
     neg_train_dataset = np.swapaxes(np.array([np.random.normal(mu_neg, var) for td in range(train_points)]),0,1)
     neg_train_dataset = np.dstack((neg_train_dataset, -1*np.ones((32,train_points))))
 

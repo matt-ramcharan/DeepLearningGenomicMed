@@ -1,7 +1,8 @@
 #import shogun
 import pandas as pd
 import numpy as np
-from shogun.Kernel import MultitaskKernelTreeNormalizer, KernelNormalizerToMultitaskKernelTreeNormalizer
+from shogun.Kernel import MultitaskKernelTreeNormalizer, GaussianKernel
+from shogun.Evaluation import RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure, ROCEvaluation, MultitaskROCEvaluation, Task
 from shogun.Classifier import MKLClassification
 
 train_data = np.load('train.npy')
@@ -14,36 +15,63 @@ correlations = np.load('corr.npy')
 # labels_train = train_data[:,:,-1]
 # labels_test = test_data[:,:,-1]
 
-features_train = train_data[1,:,:-1]
-features_test = train_data[1,:,:-1]
-labels_train = train_data[1,:,-1]
-labels_test = test_data[1,:,-1]
+features_train = train_data[:, :, :-1]
+features_test = train_data[:, :, :-1]
+labels_train = train_data[:, :, -1]
+labels_test = test_data[:, :, -1]
 
-##Multi
+features_train = Task(features_train.T)
+features_test = Task(features_test.T)
 
+labels_train = BinaryLabels(labels_train.T)
+labels_test = BinaryLabels(labels_test.T)
 
-## Multiple Kernel Learning
-# poly_kernel = shogun.PolyKernel(10, 2)
-# gauss_kernel_1 = shogun.GaussianKernel(2.0)
-# gauss_kernel_2 = shogun.GaussianKernel(3.0)
-#
-# combined_kernel = shogun.CombinedKernel()
-# combined_kernel.append_kernel(poly_kernel)
-# combined_kernel.append_kernel(gauss_kernel_1)
-# combined_kernel.append_kernel(gauss_kernel_2)
-# combined_kernel.init(features_train, features_train)
-#
-# binary_svm_solver = shogun.SVRLight()
-# mkl = shogun.MKLRegression(binary_svm_solver)
-# mkl.set_kernel(combined_kernel)
-# mkl.set_labels(labels_train)
-# mkl.train()
-#
-# beta = combined_kernel.get_subkernel_weights()
-# alpha = mkl.get_alphas()
-#
-# combined_kernel.init(features_train, features_test)
-# labels_predict = mkl.apply_regression()
-#
-# combined_kernel.init(features_train, features_test)
-# labels_predict = mkl.apply_regression()
+##Multitask
+
+epsilon = 0.001
+# C = 1.0
+C = 100000
+
+# Multitask Kernel
+
+mt_kernel = MultitaskKernelTreeNormalizer()
+gauss_kernel = GaussianKernel(features_train, features_train, 1.0)
+
+libsvm  = LibSVM()
+svm = MultitaskKernelTreeNormalizer(LibSVM)
+svm.set_interleaved_optimization_enabled(False)
+svm.set_kernel(gauss_kernel)
+svm.set_labels(labels_train)
+
+# svm = LibSVM(C, mt_kernel, labels_train)
+
+svm.train()
+
+labels_predict = svm.apply(features_test)
+train_pred = svm.apply(features_train)
+alphas = svm.get_alphas()
+b = svm.get_bias()
+
+eval = AccuracyMeasure()
+train_eval = AccuracyMeasure()
+# accuracy = eval.evaluate(labels_predict.get_labels(), labels_test)
+# print(accuracy)
+train_eval.evaluate(train_pred, labels_train)
+train_accuracy = train_eval.get_accuracy() * 100
+
+eval.evaluate(labels_predict, labels_test)
+accuracy = eval.get_accuracy() * 100
+
+roc = ROCEvaluation()
+roc_pred = roc.evaluate(labels_predict, labels_test)
+test = roc.get_ROC()
+plt.plot(test[0], test[1], marker='.')
+plt.show()
+
+print('Multitask')
+print('Alphas:', alphas)
+print('Bias:', b)
+print('AUC:', roc_pred)
+
+print('Train Accuracy(%):', train_accuracy)
+print('Accuracy(%):', accuracy)

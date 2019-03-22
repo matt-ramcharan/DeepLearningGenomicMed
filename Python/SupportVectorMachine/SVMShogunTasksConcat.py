@@ -4,13 +4,12 @@
 # from shogun.Kernel import *
 # from shogun.Classifier import AccuracyMeasure
 # from shogun.Evaluation import RealFeatures, BinaryLabels, AccuracyMeasure
-# from shogun.Kernel import GaussianKernel
 import pandas as pd
 from shogun.Loss import L2R_L2LOSS_SVC
 import matplotlib.pyplot as plt
 from shogun.Evaluation import RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure, ROCEvaluation
 import numpy as np
-from shogun.Kernel import GaussianKernel, LibLinear
+from shogun.Kernel import GaussianKernel, LibLinear, LinearKernel
 
 #MultiTask Dataset (reduced)
 # train_data = np.load('/home/matt/Documents/TechnicalProject/DeepLearningGenomicMed/Python/MultitaskLearn/train_alt.npy')
@@ -44,16 +43,17 @@ labels_train = BinaryLabels(train_label.T)
 labels_test = BinaryLabels(test_label.T)
 epsilon = 0.001
 # C = 1.0
-C = 1
+C = 100000
 
 # Gaussian
-gauss_kernel = GaussianKernel(features_train, features_train, 2)
-
+gauss_kernel = GaussianKernel(features_train, features_train, 1)
 svm = LibSVM(C, gauss_kernel, labels_train)
 
+
 # #Linear
-# svm = LibLinear(C, features_train, labels_train)
-# svm.set_liblinear_solver_type(L2R_L2LOSS_SVC)
+# linear_kernel = LinearKernel(features_train, features_train)
+# svm = LibSVM(C, linear_kernel, labels_train)
+
 
 # svm.set_epsilon(epsilon)
 
