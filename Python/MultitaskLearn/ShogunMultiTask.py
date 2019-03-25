@@ -2,8 +2,9 @@
 import pandas as pd
 import numpy as np
 from shogun.Kernel import MultitaskKernelTreeNormalizer, GaussianKernel
-from shogun.Evaluation import RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure, ROCEvaluation, MultitaskROCEvaluation, Task
+from shogun.Evaluation import RealMatrixFeatures,RealFeatures, BinaryLabels, LibSVM, AccuracyMeasure, ROCEvaluation, MultitaskROCEvaluation, Task
 from shogun.Classifier import MKLClassification
+import matplotlib.pyplot as plt
 
 train_data = np.load('train.npy')
 test_data = np.load('test.npy')
@@ -20,8 +21,8 @@ features_test = train_data[:, :, :-1]
 labels_train = train_data[:, :, -1]
 labels_test = test_data[:, :, -1]
 
-features_train = Task(features_train.T)
-features_test = Task(features_test.T)
+features_train = Task(RealFeatures(features_train))
+features_test = Task(RealFeatures(features_test))
 
 labels_train = BinaryLabels(labels_train.T)
 labels_test = BinaryLabels(labels_test.T)

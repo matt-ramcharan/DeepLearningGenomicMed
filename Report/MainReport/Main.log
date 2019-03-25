@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.8)  22 MAR 2019 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.8)  25 MAR 2019 12:35
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1112,15 +1112,15 @@ l.15
 (/home/matt/.miktex/texmfs/install/tex/latex/ucs/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )) (Tex/MTL.tex)
-(Tex/MTMKL.tex [2]) (Tex/Conclusion.tex
-Overfull \hbox (1.98697pt too wide) in paragraph at lines 19--1
+(Tex/MTMKL.tex [2]
+Overfull \hbox (5.02864pt too wide) in paragraph at lines 19--21
 []\OT1/cmr/m/n/10.95 where $\OMS/cmsy/m/n/10.95 L\OT1/cmr/m/n/10.95 (\OML/cmm/m
 /it/10.95 w\OT1/cmr/m/n/10.95 )$ is loss-term measuring training error and $\OM
 S/cmsy/m/n/10.95 R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 w\OT1/cmr/m/n/10.95 )
-$ is reguariser penalising the complexity
+$ is regulariser penalising the complexity
  []
 
-) (Main.bbl
+) (Tex/Conclusion.tex) (Main.bbl
 Underfull \hbox (badness 5217) in paragraph at lines 16--25
 []\OT1/cmr/m/n/10.95 Boris Reva, Yevgeniy Antipin, and Chris Sander.  Predictin
 g the functional
@@ -1173,8 +1173,8 @@ Package rerunfilecheck Info: File `Main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17.
  ) 
 Here is how much of TeX's memory you used:
- 31928 strings out of 494888
- 603967 string characters out of 3178698
+ 31929 strings out of 494888
+ 603979 string characters out of 3178698
  679620 words of memory out of 3000000
  35099 multiletter control sequences out of 15000+200000
  539932 words of font info for 50 fonts, out of 3000000 for 9000
@@ -1191,9 +1191,9 @@ tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/matt/.miktex/
 texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/matt/.miktex/te
 xmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/matt/.miktex/texm
 fs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Main.pdf (4 pages, 167015 bytes).
+Output written on Main.pdf (4 pages, 167769 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
