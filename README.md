@@ -1,5 +1,7 @@
 # DeepLearningGenomicMed
 
+# This project is on indefinate hiatus
+
 ## Todo
 
 Multitask on toy problems
@@ -8,7 +10,7 @@ Cosmic data manipulate
 
 Write a lot about data.
 
-Build Support vector machine as base for data
+~~Build Support vector machine as base for data~~
 
 Finding similarites between cancers
 Type code is a clinical catogorisation.
@@ -32,7 +34,7 @@ cancer highly successful cell. able to proliferate in a poor situation. Hypoxic.
 conserved vs not conserved different from standard cell.
 
 
-HAVE UNTIL 5pm WEDNESDAY - INTERIM REPORT.
+~~HAVE UNTIL 5pm WEDNESDAY - INTERIM REPORT.~~
 
 ## Plan
 
@@ -44,9 +46,9 @@ A lot of data manipulation
 
 Check for recurrence in CScape data
 
-Build Support vector machine as base for data (1 task, 1 kernel)
+~~Build Support vector machine as base for data (1 task, 1 kernel)~~
 
-1 task, multikernel learning (Following FATHMM-MKL (effectively CScape - MKL, if somewhat novel))
+~~1 task, multikernel learning (Following FATHMM-MKL (effectively CScape - MKL, if somewhat novel))~~
 
 Focus on getting multitask working on toy data 
 
