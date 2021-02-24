@@ -1,6 +1,6 @@
 # DeepLearningGenomicMed
 
-# This project is on indefinate hiatus
+# This project has been superseded by <https://github.com/matt-ramcharan/DeepLearningGenomicMed>
 
 ## Todo
 
